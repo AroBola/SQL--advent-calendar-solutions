@@ -30,10 +30,10 @@
 -- My Solution:
 
 SELECT
-c.*,
-b.location_id,
-ct.cocoa_name,
-l.location_name
+  c.*,
+  b.location_id,
+  ct.cocoa_name,
+  l.location_name
 FROM cocoa_logs c
 JOIN break_schedule b
 ON c.break_id = b.break_id
