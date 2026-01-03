@@ -18,6 +18,6 @@
 -- My Solution:
 
 SELECT
-*,
-start_date + 14 AS focus_end_date
+  *,
+  start_date + 14 AS focus_end_date
 FROM focus_challenges
