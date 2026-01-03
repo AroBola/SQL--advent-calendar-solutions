@@ -21,8 +21,8 @@
 -- My Solution:
 
 SELECT
-t.tinsel_id,
-l.light_id,
-CONCAT(t.color_name,'-',l.color_name)
+  t.tinsel_id,
+  l.light_id,
+  CONCAT(t.color_name,'-',l.color_name)
 FROM tinsel_colors t
 CROSS JOIN light_colors l
