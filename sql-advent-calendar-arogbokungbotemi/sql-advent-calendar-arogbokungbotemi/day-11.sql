@@ -18,8 +18,8 @@
 -- My Solution:
 
 SELECT
-item_id,
-item_name,
-UPPER (color)
+  item_id,
+  item_name,
+  UPPER (color)
 FROM winter_clothing
 WHERE item_name LIKE '%sweater%'
