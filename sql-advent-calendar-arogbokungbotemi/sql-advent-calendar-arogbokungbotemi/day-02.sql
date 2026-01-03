@@ -26,7 +26,7 @@ SELECT
     tp.toy_id,
     tp.toy_name,
     td.delivery_date
-From toy_production tp
+FROM toy_production tp
 LEFT JOIN toy_delivery td
 ON tp.toy_id = td.toy_id
 WHERE td.delivery_date IS NOT NULL
