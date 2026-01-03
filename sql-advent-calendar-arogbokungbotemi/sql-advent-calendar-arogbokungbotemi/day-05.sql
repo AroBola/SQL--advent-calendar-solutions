@@ -22,9 +22,9 @@
 -- My Solution:
 
 SELECT 
-e.elf_id,
-e.elf_name,
-IFNULL (v.return_date, 'Still resting') AS return_date
-  FROM elves e
+  e.elf_id,
+  e.elf_name,
+  IFNULL (v.return_date, 'Still resting') AS return_date
+FROM elves e
 LEFT JOIN vacations v
 ON e.elf_id = v.elf_id
